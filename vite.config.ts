@@ -5,7 +5,7 @@
 
 export default defineConfig({
   plugins: [react()],
-  base: '/drnick/', // Updated for your repository name
+  base: './', // Use relative paths for better compatibility
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {

@@ -9,7 +9,7 @@ function DesktopHeader() {
       {/* Logo and contact info - Left side */}
       <div className="flex items-center gap-6 flex-1 min-w-0">
         <img 
-          src="/drnick/logo.png" 
+          src="/logo.png" 
           alt="Dr. Svarnias Dental Logo" 
           className="h-16 w-auto flex-shrink-0"
         />
@@ -76,7 +76,7 @@ function MobileHeader() {
         {/* Logo and contact info - Left side */}
         <div className="flex items-center gap-3 flex-1 min-w-0">
           <img 
-            src="/drnick/logo.png" 
+            src="/logo.png" 
             alt="Dr. Svarnias Dental Logo" 
             className="h-10 w-auto flex-shrink-0"
           />
