@@ -5,7 +5,7 @@
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths for better compatibility
+  base: '/drnick/', // Use relative paths for better compatibility
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
@@ -52,7 +52,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    outDir: 'build',
+    outDir: 'dist',
   },
   server: {
     port: 3000,
