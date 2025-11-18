@@ -59,7 +59,7 @@ export function Footer() {
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-lg">Email: <a href="mailto:admin@drnicksvarnias.com" className="hover:text-white transition-colors">admin@drnicksvarnias.com</a></p>
+                  <p className="text-lg">Email: <a href="mailto:admin@drsvarnias.com" className="hover:text-white transition-colors">admin@drsvarnias.com</a></p>
                 </div>
               </div>
             </div>
@@ -81,24 +81,32 @@ export function Footer() {
             </h4>
             <div className="space-y-3 text-white/80">
               <div className="flex justify-between items-center py-2 border-b border-white/20">
-                <span className="font-medium">Monday & Tuesday</span>
-                <span className="text-primary font-bold">9:30am - 6:30pm</span>
+                <span className="font-medium">Monday</span>
+                <span className="text-primary font-bold">9:00am - 6:30pm</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-white/20">
+                <span className="font-medium">Tuesday</span>
+                <span className="text-primary font-bold">9:00am - 5:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Wednesday</span>
-                <span className="text-primary font-bold">8am - 5pm</span>
+                <span className="text-primary font-bold">8:00am - 5:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Thursday</span>
-                <span className="text-primary font-bold">12pm - 4pm</span>
+                <span className="text-primary font-bold">10:00am - 4:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
-                <span className="font-medium">Friday & Sunday</span>
-                <span className="text-muted-foreground">Closed</span>
+                <span className="font-medium">Friday</span>
+                <span className="text-primary font-bold">By Appointment</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-white/20">
+                <span className="font-medium">Saturday (Alternating)</span>
+                <span className="text-primary font-bold">8:00am - 2:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2">
-                <span className="font-medium">Alternating Saturdays</span>
-                <span className="text-primary font-bold">8am - 2pm</span>
+                <span className="font-medium">Sunday</span>
+                <span className="text-muted-foreground">Closed</span>
               </div>
             </div>
 
@@ -173,7 +181,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-white/80">
-          <p>©2008 by NICHOLAS J. SVARNIAS D.D.S.</p>
+          <p>©2025 by NICHOLAS J. SVARNIAS D.D.S.</p>
         </div>
       </div>
     </footer>

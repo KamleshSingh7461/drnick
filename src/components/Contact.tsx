@@ -63,7 +63,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground font-medium">Email</div>
-                    <div className="text-lg font-bold group-hover:text-primary transition-colors">admin@drnicksvarnias.com</div>
+              <div className="text-lg font-bold group-hover:text-primary transition-colors">admin@drsvarnias.com</div>
                   </div>
                 </div>
 
@@ -92,8 +92,12 @@ export function Contact() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
-                    <span className="font-medium">Monday & Tuesday</span>
-                    <span className="text-primary font-bold">9:30 AM - 6:30 PM</span>
+                    <span className="font-medium">Monday</span>
+                    <span className="text-primary font-bold">9:00 AM - 6:30 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="font-medium">Tuesday</span>
+                    <span className="text-primary font-bold">9:00 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Wednesday</span>
@@ -101,15 +105,19 @@ export function Contact() {
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Thursday</span>
-                    <span className="text-primary font-bold">12:00 PM - 4:00 PM</span>
+                    <span className="text-primary font-bold">10:00 AM - 4:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
-                    <span className="font-medium">Friday & Sunday</span>
-                    <span className="text-muted-foreground">Closed</span>
+                    <span className="font-medium">Friday</span>
+                    <span className="text-primary font-bold">By Appointment</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
-                    <span className="font-medium">Alternating Saturdays</span>
+                    <span className="font-medium">Saturday (Alternating)</span>
                     <span className="text-primary font-bold">8:00 AM - 2:00 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="font-medium">Sunday</span>
+                    <span className="text-muted-foreground">Closed</span>
                   </div>
                 </div>
               </CardContent>

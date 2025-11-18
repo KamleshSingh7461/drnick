@@ -105,23 +105,7 @@ export function Testimonials() {
           ))}
         </div>
 
-        {/* Trust indicators */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-8 px-8 py-4 bg-white/50 backdrop-blur-lg rounded-full border border-border/50">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">4.9/5 Rating</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">500+ Reviews</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">99% Satisfaction</span>
-            </div>
-          </div>
-        </div>
+        {/* Trust indicators removed as requested */}
       </div>
     </section>
   );

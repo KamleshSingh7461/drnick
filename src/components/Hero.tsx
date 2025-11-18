@@ -45,7 +45,7 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center group">
-                <div className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">15+</div>
+                  <div className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">39</div>
                 <div className="text-sm text-muted-foreground font-medium">Years Experience</div>
               </div>
               <div className="text-center group">
@@ -53,7 +53,7 @@ export function Hero() {
                 <div className="text-sm text-muted-foreground font-medium">Happy Patients</div>
               </div>
               <div className="text-center group">
-                <div className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">4.9★</div>
+                <div className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">5.0★</div>
                 <div className="text-sm text-muted-foreground font-medium">Patient Rating</div>
               </div>
             </div>

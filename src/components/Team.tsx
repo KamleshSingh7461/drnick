@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Users } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./ui/carousel";
 
 const teamMembers = [
   {
@@ -22,9 +23,47 @@ const teamMembers = [
     image: "https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzU3MzU3MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
     bio: "Dr. Jon is a dedicated dental professional committed to providing exceptional patient care. With years of experience in general dentistry, he focuses on preventive care and ensuring patient comfort during all procedures."
   }
+  ,
+  {
+    name: "Gabby",
+    role: "DDS",
+    specialties: [],
+    education: "",
+    experience: "",
+    image: "https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzU3MzU3MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    bio: ""
+  },
+  {
+    name: "Renee",
+    role: "DDS",
+    specialties: [],
+    education: "",
+    experience: "",
+    image: "https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzU3MzU3MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    bio: ""
+  },
+  {
+    name: "Martha",
+    role: "DDS",
+    specialties: [],
+    education: "",
+    experience: "",
+    image: "https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzU3MzU3MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    bio: ""
+  },
+  {
+    name: "Diana",
+    role: "DDS",
+    specialties: [],
+    education: "",
+    experience: "",
+    image: "https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzU3MzU3MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    bio: ""
+  }
 ];
 
 export function Team() {
+
   return (
     <section id="team" className="py-24 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
       {/* Background decorations */}
@@ -52,9 +91,19 @@ export function Team() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-            <Card key={index} className="group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden">
+        {/* Carousel */}
+        <div className="relative">
+
+          <Carousel>
+            <div className="flex justify-end mb-4 gap-2">
+              <CarouselPrevious className="p-2 rounded-md bg-white/90 hover:bg-white transition-shadow shadow-sm" />
+              <CarouselNext className="p-2 rounded-md bg-white/90 hover:bg-white transition-shadow shadow-sm" />
+            </div>
+
+            <CarouselContent className="-ml-4 flex gap-6">
+              {teamMembers.map((member, index) => (
+                <CarouselItem className="pl-4" key={index}>
+                  <Card className="group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden">
               {/* Card background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
@@ -105,9 +154,12 @@ export function Team() {
                     {member.bio}
                   </p>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+                  </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>
