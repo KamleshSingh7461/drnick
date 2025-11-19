@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { Phone, Menu, X, Smartphone } from "lucide-react";
 import { useState } from "react";
-const logoSrc = new URL('logo.png', import.meta.env.BASE_URL).href;
+const logoSrc = import.meta.env.BASE_URL + 'logo.png';
 
 // Desktop Header Component
 function DesktopHeader() {
