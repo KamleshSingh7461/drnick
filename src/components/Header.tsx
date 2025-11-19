@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { Phone, Menu, X, Smartphone } from "lucide-react";
 import { useState } from "react";
+const logoSrc = new URL('logo.png', import.meta.env.BASE_URL).href;
 
 // Desktop Header Component
 function DesktopHeader() {
@@ -9,7 +10,7 @@ function DesktopHeader() {
       {/* Logo and contact info - Left side */}
       <div className="flex items-center gap-6 flex-1 min-w-0">
         <img 
-          src="/logo.png" 
+          src={logoSrc} 
           alt="Dr. Svarnias Dental Logo" 
           className="h-16 w-auto flex-shrink-0"
         />
@@ -76,7 +77,7 @@ function MobileHeader() {
         {/* Logo and contact info - Left side */}
         <div className="flex items-center gap-3 flex-1 min-w-0">
           <img 
-            src="/logo.png" 
+            src={logoSrc} 
             alt="Dr. Svarnias Dental Logo" 
             className="h-10 w-auto flex-shrink-0"
           />
