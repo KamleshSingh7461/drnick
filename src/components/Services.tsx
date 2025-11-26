@@ -1,12 +1,12 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
-import { 
-  Smile, 
-  Shield, 
-  Sparkles, 
-  Heart, 
-  Baby, 
+import {
+  Smile,
+  Shield,
+  Sparkles,
+  Heart,
+  Baby,
   Zap,
   Camera,
   Wrench,
@@ -95,38 +95,31 @@ export function Services() {
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">Our Services</span>
           </div>
-          
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Featured Services At
-            <span className="block bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
-              SVARNIAS DENTAL
-            </span>
-          </h2>
-          
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">Featured Services At SVARNIAS DENTAL</h2>
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From routine cleanings to advanced procedures, we offer a full range of 
+            From routine cleanings to advanced procedures, we offer a full range of
             dental services to meet all your oral health needs with cutting-edge technology.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
           {services.map((service, index) => (
-            <Card key={index} className={`group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden ${
-              index === 6 ? 'sm:col-span-2 lg:col-span-1 xl:col-span-1' : ''
-            }`}>
+            <Card key={index} className={`group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden ${index === 6 ? 'sm:col-span-2 lg:col-span-1 xl:col-span-1' : ''
+              }`}>
               {/* Card background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+
               <CardHeader className="relative z-10 pb-4">
                 <div className="w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-medium transition-all duration-300 relative">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-primary transition-colors" />
                   <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-xl"></div>
                 </div>
-                
+
                 <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors duration-300 mb-3">
                   {service.title}
                 </CardTitle>
-                
+
                 <CardDescription className="text-sm text-muted-foreground leading-relaxed" style={{
                   display: '-webkit-box',
                   WebkitLineClamp: 4,
@@ -136,7 +129,7 @@ export function Services() {
                   {service.description}
                 </CardDescription>
               </CardHeader>
-              
+
               <CardContent className="relative z-10">
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
@@ -146,9 +139,9 @@ export function Services() {
                     </li>
                   ))}
                 </ul>
-                
-                <Button 
-                  variant="outline" 
+
+                <Button
+                  variant="outline"
                   size="sm"
                   className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300 shadow-sm hover:shadow-medium text-xs"
                   onClick={() => {

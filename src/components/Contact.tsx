@@ -3,11 +3,11 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
   Calendar,
   Car
 } from "lucide-react";
@@ -27,16 +27,13 @@ export function Contact() {
             <Mail className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">Contact Us</span>
           </div>
-          
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Get In 
-            <span className="block bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
-              Touch
-            </span>
+
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
+            Get In Touch
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to start your journey to a healthier smile? Contact us today 
+            Ready to start your journey to a healthier smile? Contact us today
             to schedule your appointment or ask any questions.
           </p>
         </div>
@@ -45,7 +42,7 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-8 text-black">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-6 group p-4 rounded-2xl hover:bg-white/50 hover:shadow-medium transition-all duration-300">
                   <div className="w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:shadow-medium transition-all duration-300">
@@ -63,7 +60,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground font-medium">Email</div>
-              <div className="text-lg font-bold group-hover:text-primary transition-colors">admin@drsvarnias.com</div>
+                    <div className="text-lg font-bold group-hover:text-primary transition-colors">admin@drsvarnias.com</div>
                   </div>
                 </div>
 
@@ -93,27 +90,27 @@ export function Contact() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Monday</span>
-                    <span className="text-primary font-bold">9:00 AM - 6:30 PM</span>
+                    <span className="font-bold">9:00 AM - 6:30 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Tuesday</span>
-                    <span className="text-primary font-bold">9:00 AM - 5:00 PM</span>
+                    <span className="font-bold">9:00 AM - 6:30 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Wednesday</span>
-                    <span className="text-primary font-bold">8:00 AM - 5:00 PM</span>
+                    <span className="font-bold">8:00 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Thursday</span>
-                    <span className="text-primary font-bold">10:00 AM - 4:00 PM</span>
+                    <span className="font-bold">10:00 AM - 4:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Friday</span>
-                    <span className="text-primary font-bold">By Appointment</span>
+                    <span className="font-bold">By Appointment</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Saturday (Alternating)</span>
-                    <span className="text-primary font-bold">8:00 AM - 2:00 PM</span>
+                    <span className="font-bold">8:00 AM - 2:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-medium">Sunday</span>
@@ -158,7 +155,7 @@ export function Contact() {
           {/* Contact Form */}
           <Card className="bg-white/80 backdrop-blur-lg border-border/50 shadow-large">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
+              <CardTitle className="text-2xl font-bold text-black">
                 Send Us a Message
               </CardTitle>
               <CardDescription className="text-base">
@@ -195,8 +192,8 @@ export function Contact() {
 
                 <div className="space-y-3">
                   <Label htmlFor="message" className="font-medium">Message</Label>
-                  <Textarea 
-                    id="message" 
+                  <Textarea
+                    id="message"
                     placeholder="Tell us about your dental needs or any questions you have..."
                     rows={4}
                     className="border-border/50 focus:border-primary/50 transition-colors resize-none"

@@ -1,10 +1,10 @@
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Facebook, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
   Clock,
   Calendar
 } from "lucide-react";
@@ -77,51 +77,48 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-2xl font-bold text-white flex items-center gap-2">
               <Clock className="w-6 h-6" />
-              Clinic Hours
+              Office Hours
             </h4>
             <div className="space-y-3 text-white/80">
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Monday</span>
-                <span className="text-primary font-bold">9:00am - 6:30pm</span>
+                <span className="font-bold">9:00am - 6:30pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Tuesday</span>
-                <span className="text-primary font-bold">9:00am - 5:00pm</span>
+                <span className="font-bold">9:00am - 6:30pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Wednesday</span>
-                <span className="text-primary font-bold">8:00am - 5:00pm</span>
+                <span className="font-bold">8:00am - 5:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Thursday</span>
-                <span className="text-primary font-bold">10:00am - 4:00pm</span>
+                <span className="font-bold">10:00am - 4:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Friday</span>
-                <span className="text-primary font-bold">By Appointment</span>
+                <span className="font-bold">By Appointment</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/20">
                 <span className="font-medium">Saturday (Alternating)</span>
-                <span className="text-primary font-bold">8:00am - 2:00pm</span>
+                <span className="font-bold">8:00am - 2:00pm</span>
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="font-medium">Sunday</span>
-                <span className="text-muted-foreground">Closed</span>
+                <div className="pt-4">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="gradient-primary border-0 shadow-medium hover:shadow-large hover:scale-105 transition-all duration-300 px-8 py-4 text-lg w-full"
+                  >
+                    <a href="#contact">
+                      <Calendar className="w-5 h-5 mr-2" />
+                      Book Now
+                    </a>
+                  </Button>
+                </div>
               </div>
-            </div>
-
-            {/* Book Now Button */}
-            <div className="pt-4">
-              <Button 
-                asChild
-                size="lg" 
-                className="gradient-primary border-0 shadow-medium hover:shadow-large hover:scale-105 transition-all duration-300 px-8 py-4 text-lg w-full"
-              >
-                <a href="#contact">
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Book Now
-                </a>
-              </Button>
             </div>
           </div>
 
@@ -132,26 +129,26 @@ export function Footer() {
               Find Us
             </h4>
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.123456789!2d-87.7654321!3d41.9876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc029d143045%3A0xb8be34d6b4d06e18!2s5265%20N%20Central%20Ave%2C%20Chicago%2C%20IL%2060630%2C%20USA!5e0!3m2!1sen!2sus!4v1757630399220!5m2!1sen!2sus" 
-                width="100%" 
-                height="300" 
-                style={{border: 0}} 
-                allowFullScreen 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.123456789!2d-87.7654321!3d41.9876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc029d143045%3A0xb8be34d6b4d06e18!2s5265%20N%20Central%20Ave%2C%20Chicago%2C%20IL%2060630%2C%20USA!5e0!3m2!1sen!2sus!4v1757630399220!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full"
               ></iframe>
             </div>
             <div className="text-center">
-              <Button 
+              <Button
                 asChild
-                variant="outline" 
+                variant="outline"
                 className="border-white/50 text-white bg-white/5 hover:bg-white/10 hover:border-white/70 transition-all duration-300 w-full"
               >
-                <a 
-                  href="https://maps.app.goo.gl/Ksr1dh2j5sRnUNyP7" 
-                  target="_blank" 
+                <a
+                  href="https://maps.app.goo.gl/Ksr1dh2j5sRnUNyP7"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
                 >

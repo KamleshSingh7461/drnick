@@ -32,7 +32,7 @@ export function Testimonials() {
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 -left-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -41,16 +41,13 @@ export function Testimonials() {
             <Star className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">Patient Reviews</span>
           </div>
-          
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            What Our 
-            <span className="block bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
-              Patients Say
-            </span>
+
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
+            What Our Patients Say
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied patients 
+            Don't just take our word for it. Here's what our satisfied patients
             have to say about their experience at SmileCare Dental.
           </p>
         </div>
@@ -60,13 +57,13 @@ export function Testimonials() {
             <Card key={index} className="h-full group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden">
               {/* Card background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+
               <CardContent className="p-8 relative z-10">
                 <div className="space-y-6">
                   {/* Rating with glow effect */}
                   <div className="flex gap-1 justify-center">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400 group-hover:scale-110 transition-transform duration-300" style={{transitionDelay: `${i * 50}ms`}} />
+                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400 group-hover:scale-110 transition-transform duration-300" style={{ transitionDelay: `${i * 50}ms` }} />
                     ))}
                   </div>
 
@@ -74,7 +71,7 @@ export function Testimonials() {
                   <div className="text-center">
                     <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/20 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849v10h-5.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849v10h-6z"/>
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849v10h-5.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849v10h-6z" />
                       </svg>
                     </div>
                   </div>
@@ -87,7 +84,7 @@ export function Testimonials() {
                   {/* Author */}
                   <div className="flex items-center gap-4 pt-6 border-t border-border/50 justify-center">
                     <div className="relative group/avatar">
-                      <ImageWithFallback 
+                      <ImageWithFallback
                         src={testimonial.image}
                         alt={testimonial.name}
                         className="w-14 h-14 rounded-full object-cover border-2 border-primary/20 group-hover/avatar:border-primary/50 transition-colors duration-300"

@@ -66,8 +66,8 @@ export function FAQ() {
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(item => item !== index)
         : [...prev, index]
     );
@@ -78,7 +78,7 @@ export function FAQ() {
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -87,13 +87,11 @@ export function FAQ() {
             <HelpCircle className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">FAQ</span>
           </div>
-          
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="block bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
-              Frequently Asked Questions
-            </span>
+
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
+            Frequently Asked Questions
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Get answers to common questions about our dental services, procedures, and what to expect during your visit.
           </p>
@@ -102,8 +100,8 @@ export function FAQ() {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-large transition-all duration-300 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 overflow-hidden"
               >
                 <button
@@ -121,7 +119,7 @@ export function FAQ() {
                     )}
                   </div>
                 </button>
-                
+
                 {openItems.includes(index) && (
                   <CardContent className="px-6 pb-6 pt-0">
                     <div className="border-t border-border/20 pt-4">
@@ -144,17 +142,17 @@ export function FAQ() {
                 We're here to help! Contact us directly for personalized answers to your dental care questions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
+                <Button
                   asChild
-                  size="lg" 
+                  size="lg"
                   className="gradient-primary border-0 shadow-medium hover:shadow-large hover:scale-105 transition-all duration-300 px-8 py-4"
                 >
                   <a href="tel:+17732829696">Call Us Now</a>
                 </Button>
-                <Button 
+                <Button
                   asChild
-                  variant="outline" 
-                  size="lg" 
+                  variant="outline"
+                  size="lg"
                   className="px-8 py-4 border-2 hover:bg-primary/5 hover:border-primary/50 transition-all duration-300"
                 >
                   <a href="#contact">Schedule Consultation</a>
