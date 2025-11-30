@@ -20,13 +20,13 @@ const teamMembers = [
     role: "DDS",
     specialties: ["General Dentistry", "Preventive Care", "Cosmetic Enhancements"],
     education: "University of Illinois at Chicago College of Dentistry",
-    experience: "10+ years",
+    experience: "5 years",
     image: "/drnick/Staff_Photos_DrJon.jpg",
     bio: "Dr. Jonathan Gonzalez is dedicated to making every patient feel comfortable, cared for, and confident in their smile. He understands that visiting the dentist can sometimes feel intimidating, so he takes the time to listen, explain, and ensure each visit is relaxed and personalized. His goal is to create lasting relationships built on trust, transparency, and excellent care. A graduate of the University of Illinois at Chicago College of Dentistry, Dr. Gonzalez provides comprehensive dental care for patients of all ages. Whether it’s preventive cleanings, cosmetic enhancements, or restorative treatments, he believes in using a gentle touch and the latest techniques to help patients achieve and maintain healthy, beautiful smiles. Before beginning his dental career, Dr. Gonzalez proudly served in the U.S. Marines, where he developed his strong sense of discipline, teamwork, and service—qualities that continue to guide his patient care today. Born and raised in Park Ridge, Illinois, Dr. Gonzalez is proud to serve near his hometown. Outside the office, he enjoys spending time with his wife and daughter, golfing, and cheering on the Chicago Bears."
   },
   {
     name: "Gabriela",
-    role: "Dental Hygienist",
+    role: "Registered Dental Hygienist",
     specialties: ["Preventive Care", "Patient Education"],
     education: "Kennedy-King College",
     experience: "20+ years",
@@ -48,7 +48,7 @@ const teamMembers = [
     specialties: ["Personalized Home Care"],
     education: "Dental Hygiene School (2013)",
     experience: "20+ years",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwZmVtYWxlJTIwZGVudGFsJTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc1NzM1NzM1OHww&ixlib=rb-4.1.0&w=600&q=90&dpr=2",
+    image: "/drnick/Staff_Photos_Renee.jpg",
     bio: "Renee started working with Dr. Nick as a dental assistant over 20 years ago and graduated from dental hygiene school in 2013. She enjoys working with her patients to find the best personalized home care solutions that will motivate them to keep their gums and teeth healthy."
   },
   {
@@ -64,14 +64,17 @@ const teamMembers = [
 
 export function Team() {
   const [api, setApi] = useState<CarouselApi | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     if (!api) return;
     const interval = window.setInterval(() => {
-      api.scrollNext();
+      if (!isPaused) {
+        api.scrollNext();
+      }
     }, 7000);
     return () => window.clearInterval(interval);
-  }, [api]);
+  }, [api, isPaused]);
 
   return (
     <section id="team" className="py-24 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
@@ -83,13 +86,9 @@ export function Team() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
-            <Users className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Our Team</span>
-          </div>
 
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
-            MEET THE DOCTORS
+            Meet the team
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -99,7 +98,11 @@ export function Team() {
         </div>
 
         {/* Carousel */}
-        <div className="relative">
+        <div
+          className="relative"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
 
           <Carousel opts={{ loop: true, align: "start", dragFree: false }} setApi={setApi}>
             <div className="flex justify-end mb-4 gap-2">

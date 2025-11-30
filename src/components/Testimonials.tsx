@@ -37,10 +37,6 @@ export function Testimonials() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
-            <Star className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Patient Reviews</span>
-          </div>
 
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
             What Our Patients Say

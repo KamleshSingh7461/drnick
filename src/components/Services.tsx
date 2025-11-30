@@ -91,11 +91,8 @@ export function Services() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Our Services</span>
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">Featured Services At SVARNIAS DENTAL</h2>
+
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">Featured Services at Svarnias Dental</h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             From routine cleanings to advanced procedures, we offer a full range of
@@ -111,23 +108,13 @@ export function Services() {
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <CardHeader className="relative z-10 pb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-medium transition-all duration-300 relative">
-                  <service.icon className="w-7 h-7 text-primary group-hover:text-primary transition-colors" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-xl"></div>
-                </div>
+
 
                 <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors duration-300 mb-3">
                   {service.title}
                 </CardTitle>
 
-                <CardDescription className="text-sm text-muted-foreground leading-relaxed" style={{
-                  display: '-webkit-box',
-                  WebkitLineClamp: 4,
-                  WebkitBoxOrient: 'vertical',
-                  overflow: 'hidden'
-                }}>
-                  {service.description}
-                </CardDescription>
+
               </CardHeader>
 
               <CardContent className="relative z-10">

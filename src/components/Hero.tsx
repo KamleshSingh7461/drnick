@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Star, Award, Users, Calendar } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
- 
+
 
 export function Hero() {
   return (
@@ -17,10 +17,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 order-2 lg:order-1">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                <Star className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Excellence in Dental Care</span>
-              </div>
+
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-black">Welcome to Svarnias Dental</h1>
 
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
