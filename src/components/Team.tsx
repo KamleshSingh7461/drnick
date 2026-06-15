@@ -12,7 +12,7 @@ const teamMembers = [
     specialties: ["General Dentistry", "Restorative Care", "Cosmetic Dentistry"],
     education: "University of Illinois College of Dentistry",
     experience: "39 years",
-    image: "/drnick/Staff_Photos_DrNick.jpg",
+    image: "/Staff_Photos_DrNick.jpg",
     bio: "Dr. Nicholas J. Svarnias is a dedicated general dentist committed to providing high-quality, patient-centered care within a relationship-based practice. With 39 years of experience, Dr. Svarnias brings a depth of knowledge, skill, and clinical insight that only decades of caring for patients can provide. A graduate of the University of Illinois College of Dentistry, he combines a strong clinical foundation with a genuine passion for lifelong learning. He continually expands his expertise through ongoing continuing education, ensuring that his patients benefit from the most current techniques, technologies, and evidence-based practices in modern dentistry. Known for his warm and approachable manner, Dr. Svarnias strives to create an environment where patients feel informed, well educated, comfortable, and confident in their treatment. He enjoys caring for patients of all ages—from children to adults—and provides a full spectrum of services, ranging from routine preventive care to complex restorative and cosmetic cases. His goal is always to deliver treatment that is both personalized and compassionate. Outside the office, Dr. Svarnias enjoys traveling with his wife and two children, spending time with friends and family, staying active in his professional development, and contributing to the well-being of his community."
   },
   {
@@ -21,7 +21,7 @@ const teamMembers = [
     specialties: ["General Dentistry", "Preventive Care", "Cosmetic Enhancements"],
     education: "University of Illinois at Chicago College of Dentistry",
     experience: "5 years",
-    image: "/drnick/Staff_Photos_DrJon.jpg",
+    image: "/Staff_Photos_DrJon.jpg",
     bio: "Dr. Jonathan Gonzalez is dedicated to making every patient feel comfortable, cared for, and confident in their smile. He understands that visiting the dentist can sometimes feel intimidating, so he takes the time to listen, explain, and ensure each visit is relaxed and personalized. His goal is to create lasting relationships built on trust, transparency, and excellent care. A graduate of the University of Illinois at Chicago College of Dentistry, Dr. Gonzalez provides comprehensive dental care for patients of all ages. Whether it’s preventive cleanings, cosmetic enhancements, or restorative treatments, he believes in using a gentle touch and the latest techniques to help patients achieve and maintain healthy, beautiful smiles. Before beginning his dental career, Dr. Gonzalez proudly served in the U.S. Marines, where he developed his strong sense of discipline, teamwork, and service—qualities that continue to guide his patient care today. Born and raised in Park Ridge, Illinois, Dr. Gonzalez is proud to serve near his hometown. Outside the office, he enjoys spending time with his wife and daughter, golfing, and cheering on the Chicago Bears."
   },
   {
@@ -30,7 +30,7 @@ const teamMembers = [
     specialties: ["Preventive Care", "Patient Education"],
     education: "Kennedy-King College",
     experience: "20+ years",
-    image: "/drnick/Staff_Photos_Gabriela.jpg",
+    image: "/Staff_Photos_Gabriela.jpg",
     bio: "With over 20 years of clinical experience, Gabriela is a dedicated dental hygienist who began her career after graduating from Kennedy-King College, where she earned the prestigious Golden Scaler Award for clinical excellence. Her extensive expertise spans preventive care, patient education, and fostering long-term oral health. Known for her gentle approach and strong technical skills, she consistently earns the trust of patients and colleagues alike. She remains deeply passionate about her profession, continually pursuing advanced training to provide the highest standard of care."
   },
   {
@@ -39,7 +39,7 @@ const teamMembers = [
     specialties: ["Patient Education", "Meticulous Care"],
     education: "",
     experience: "~30 years",
-    image: "/drnick/Staff_Photos_Martha.png",
+    image: "/Staff_Photos_Martha.png",
     bio: "Martha Ramirez brings almost three decades of experience to her role as a dental hygienist known for her meticulous care and patient education, Martha excels in providing exceptional dental services. Her commitment to oral health, passion for helping others, and compassion for patients who can be hesitant to see a dental professional shine through. An avid Disney geek and proud mom of two handsome young men."
   },
   {
@@ -48,7 +48,7 @@ const teamMembers = [
     specialties: ["Personalized Home Care"],
     education: "Dental Hygiene School (2013)",
     experience: "20+ years",
-    image: "/drnick/Staff_Photos_Renee.jpg",
+    image: "/Staff_Photos_Renee.jpg",
     bio: "Renee started working with Dr. Nick as a dental assistant over 20 years ago and graduated from dental hygiene school in 2013. She enjoys working with her patients to find the best personalized home care solutions that will motivate them to keep their gums and teeth healthy."
   },
   {
@@ -57,7 +57,7 @@ const teamMembers = [
     specialties: ["Public Health", "Patient Education"],
     education: "Kennedy King College",
     experience: "30+ years",
-    image: "/drnick/Staff_Photos_Diana.jpg",
+    image: "/Staff_Photos_Diana.jpg",
     bio: "Diana has been in the dental field for over 30 years and the last 20 years as a passionate dental hygienist. She graduated from Kennedy King College and is licensed in Illinois. She prides herself on gentle and compassionate approach with patients and dedication in educating patients about oral and overall health. She keeps up to date on the latest technology and techniques in the dental field by attending many continuing education courses, and In 2023 obtained a certification in public health in the dental field."
   }
 ];
