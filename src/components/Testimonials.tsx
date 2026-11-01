@@ -1,28 +1,36 @@
 import { Card, CardContent } from "./ui/card";
 import { Star } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const testimonials = [
   {
-    name: "Jennifer Smith",
-    role: "Marketing Executive",
-    content: "Dr. Johnson and her team transformed my smile completely. The process was comfortable and the results exceeded my expectations. I couldn't be happier!",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1684607631635-44399dee5ac9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBhdGllbnQlMjBkZW50YWx8ZW58MXx8fHwxNzU3NDAyMzU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    name: "Tyler Laurisch",
+    role: "Another Great Cleaning and Check-up",
+    content: "The six-month cleaning and check-up went smoothly and yielded the good news that, at my advanced age, the only way I can lose my teeth is if I get punched in the mouth. I can thank the longevity of my teeth to the years of care from Dr. Svarnias and his excellent staff.",
+    rating: 5
   },
   {
-    name: "Robert Johnson",
-    role: "Teacher",
-    content: "I've been a patient here for 5 years. The staff is professional, friendly, and always makes me feel comfortable. Highly recommend SmileCare Dental!",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1684607631635-44399dee5ac9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBhdGllbnQlMjBkZW50YWx8ZW58MXx8fHwxNzU3NDAyMzU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    name: "Verified Patient",
+    role: "Friendly & Efficient Cleanings",
+    content: "It's always a positive experience here. The team is very friendly, and appointments are on time and efficient. Good general dental advice and honesty around procedures (with no pressure). We've been coming here for 25+ years and will continue to do so.",
+    rating: 5
   },
   {
-    name: "Maria Garcia",
-    role: "Business Owner",
-    content: "My kids love coming here! Dr. Rodriguez is amazing with children and makes every visit fun. The whole family feels comfortable here.",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1684607631635-44399dee5ac9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBhdGllbnQlMjBkZW50YWx8ZW58MXx8fHwxNzU3NDAyMzU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    name: "Marienne Perry",
+    role: "Google Review",
+    content: "Dr Svarnias and his Staff are the BEST! Dr Svarnias has been my dentist for more than 30 years. You have to be good to earn that kind of loyalty, especially when the location is no longer around the corner from home.",
+    rating: 5
+  },
+  {
+    name: "Gunther Duelfer",
+    role: "Google Review",
+    content: "Starting with the wonderful receptionist Trish, making the appointment and then greeting me with a friendly smile and then the talented Hygienist Gabby and Chiqui make every appointment pleasurable. These 3 fine women and others make Dr Nick's office run great and it is capped with the capable Dentist Dr. Nick. My family has been going to see him for well over 40 years and are always in capable hands. Thank you all",
+    rating: 5
+  },
+  {
+    name: "Adanna Byrd",
+    role: "Google Review",
+    content: "I have been going to Dr. Nick since I was a little girl and this is the best dentist. The space is clean and the staff is professional and friendly. My forever go to! Thank you for continuing to provide great dental service for over 20 years and on!",
+    rating: 5
   }
 ];
 
@@ -39,23 +47,23 @@ export function Testimonials() {
         <div className="text-center mb-20">
 
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
-            What Our Patients Say
+            What Patients Say About Svarnias Dental
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied patients
-            have to say about their experience at SmileCare Dental.
+            Real reviews from the patients and families who have trusted
+            Dr. Svarnias and our team for decades.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="h-full group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden">
+            <Card key={index} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)] group hover:shadow-large transition-all duration-500 bg-white/80 backdrop-blur-lg border-border/50 hover:border-primary/30 hover:scale-105 relative overflow-hidden">
               {/* Card background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <CardContent className="p-8 relative z-10">
-                <div className="space-y-6">
+              <CardContent className="p-8 relative z-10 h-full">
+                <div className="flex flex-col h-full space-y-6">
                   {/* Rating with glow effect */}
                   <div className="flex gap-1 justify-center">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -73,24 +81,14 @@ export function Testimonials() {
                   </div>
 
                   {/* Content */}
-                  <blockquote className="text-muted-foreground leading-relaxed text-center text-lg italic group-hover:text-foreground transition-colors duration-300">
+                  <blockquote className="flex-1 text-muted-foreground leading-relaxed text-center text-lg italic group-hover:text-foreground transition-colors duration-300">
                     "{testimonial.content}"
                   </blockquote>
 
                   {/* Author */}
-                  <div className="flex items-center gap-4 pt-6 border-t border-border/50 justify-center">
-                    <div className="relative group/avatar">
-                      <ImageWithFallback
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-14 h-14 rounded-full object-cover border-2 border-primary/20 group-hover/avatar:border-primary/50 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover/avatar:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div className="text-center">
-                      <div className="font-bold text-foreground group-hover:text-primary transition-colors duration-300">{testimonial.name}</div>
-                      <div className="text-sm text-muted-foreground font-medium">{testimonial.role}</div>
-                    </div>
+                  <div className="pt-6 border-t border-border/50 text-center">
+                    <div className="font-bold text-foreground group-hover:text-primary transition-colors duration-300">{testimonial.name}</div>
+                    <div className="text-sm text-muted-foreground font-medium">{testimonial.role}</div>
                   </div>
                 </div>
               </CardContent>
